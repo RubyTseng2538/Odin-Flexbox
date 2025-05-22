@@ -1,8 +1,11 @@
 body{
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #1F2937;
     color: #e5e7eb; 
-    padding: 0 100px;
+    padding: 0;
+    margin: 0;
+}
+.header, .footer, .item_one, .item_two, .item_three, .item_four{
+    padding: 0 200px;
 }
 
 .header{
@@ -10,9 +13,12 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    height: 72px;
 }
 
-.header_logo{
+.header_logo h4{
     font-size: 24px;
     color: #f9faf8;
     font-weight: 700;
@@ -23,12 +29,11 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     gap: 24px;
-    list-style: none;
-    font-size: 18px;
-     
+    list-style: none;  
 }
 
-.header_nav{
+.header_nav, p{
+    font-size: 18px;
     color: #e5e7eb; 
 }
 
@@ -36,4 +41,188 @@ ul{
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+.item_one{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 70px 200px;
+    margin: 0;
+    background-color: #1F2937;
+}
+
+.contentOne{
+    flex: 1;
+    display: flex;
+    flex-direction: column;    
+}
+.contentTwo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #56575c;
+    align-items: center;
+    justify-content: center;
+}
+
+.big_text{
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.signUp{
+    border-radius: 10px;
+    border: none;
+    background-color: #3882f6;
+    color : #f9faf8;
+    padding: 8px 16px;
+    flex: 0;
+    align-self: flex-start;
+    
+}
+
+.centerText{
+    text-align: center;
+}
+
+.item_two{
+    flex: 1;
+    padding: 30px 200px;
+    margin: 0;
+    
+}
+
+.contentThree h4{
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.contentFour{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 48px;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card_image{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 4px solid #3882f6;
+}
+
+.card p{
+    color: #1F2937;
+    font-size: 18px;
+    margin: 0, 4px;
+    width: 160px;
+}
+
+.item_three{
+    flex: 1;
+    padding: 30px 200px;
+    margin: 0;
+    background-color: #e5e7eb;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_three h4{
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.item_three h5{
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.item_four{
+    flex: 1;
+    padding: 64px 200px;
+    margin: 0;
+}
+
+.contentFive{
+    background-color: #3882f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    border-radius: 10px;
+}
+.contentFive_text{
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 32px 80px;
+}
+.contentFive_text h4{
+    color: #f9faf8;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.contentFive_text p{
+    margin: 0;
+    padding: 0;
+    color: #f9faf8;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.contentFive_button{
+    padding: 0 80px;
+}
+.contentFive button{
+    border-radius: 10px;
+    border:2px solid #f9faf8;
+    background-color: #3882f6;
+    color : #f9faf8;
+    padding: 8px 32px;
+    flex: 0;
+    align-self: flex-start;
+}
+
+.footer{
+    background-color: #1F2937;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.footer_logo{
+    font-size: 14px;
 }
